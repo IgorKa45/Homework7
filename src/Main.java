@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Задание 1");
+        System.out.println("Задание 1.");
 
         short month = 0;
         int savings = 0;
