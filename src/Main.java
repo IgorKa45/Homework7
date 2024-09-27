@@ -6,8 +6,9 @@ public class Main {
         short month = 0;
         int savings = 0;
         while (savings < 2459000) {
+            int savingsPercent = (int)(savings * 0.12f); // 12% выраженные в рублях
             month++;
-            savings = savings + 15000;
+            savings = savings + 15000 + savingsPercent;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + savings + " рублей.");
         }
 
@@ -84,10 +85,8 @@ public class Main {
         int year2 = 0;
         while (year2 < 2124) {
             year2++;
-            if (year2 % 79 == 0 && 2024 > year2 && year2 > (2024 - 200)) {
-                System.out.println("Комета пролетала над Землёй в " + year2 + " году.");
-            } else if (year2 % 79 == 0 && year2 > 2024) {
-                System.out.println("Комета появится над Землёй в " + year2 + " году.");
+            if (year2 % 79 == 0 && year2 > (2024 - 200)) {
+                System.out.println(year2);
             }
         }
     }
