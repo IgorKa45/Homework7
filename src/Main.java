@@ -73,7 +73,7 @@ public class Main {
 
         System.out.println("Задание 7");
         //День месяца (В условии не сказано, поэтому предположим что месяц начался с понедельника)
-        int friday = 3;
+        int friday = 1;
         while (friday <= 31) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчёт.");
             friday = friday + 7;
